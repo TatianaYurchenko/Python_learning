@@ -32,3 +32,8 @@
 #         print(x)
 # _______________
 
+# y = 30
+# for x in range(31):
+#          print(y)
+#          y -= 1
+
