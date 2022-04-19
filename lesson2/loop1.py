@@ -37,3 +37,7 @@
 #          print(y)
 #          y -= 1
 
+abc = "abcdefghij"
+
+for i in range(1, 11):
+    print(i, abc[i-1])
