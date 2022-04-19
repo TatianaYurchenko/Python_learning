@@ -1,5 +1,4 @@
-a = 4
-b = 6
-test = f'TEST {a + b}'
-print(test)
-print(type(test))
+milk = 10
+eggs = 12
+text = f'Please don\'t forget to buy {milk**2} gallons of milk and {eggs} eggs'
+print(text)
