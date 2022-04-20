@@ -15,6 +15,14 @@
 #     else:
 #         return("can conpare only positive numbers!")
 # print(compare_two_numbers(0, 0))
+
+# def compare_positive(x, y):
+#     if x < 0 or y < 0:
+#         return "Can compare only positive numbers!"
+#     else:
+#         return x > y
+# print(compare_positive(8, 9))
+
 # ____________
 #
 # def sum_two_numbers(a , b):
@@ -27,6 +35,11 @@
 #     d = a - b
 #     return d
 # print(f'result:{sum_two_numbers(4 , 5)}')
+
+
+# def subtract_two_numbers(a, b):
+#     return a - b
+# print(subtract_two_numbers(8, 9))
 # __________
 
 # def print_vertical(a):
@@ -44,7 +57,7 @@
 # ____________________
 
 # Написать функцию которая распечатывает тип введенных данных
-def type_of_input(a):
-    print(a.__class__)
-    return a
-type_of_input(1.5)
+# def type_of_input(a):
+#     print(a.__class__)
+#     return a
+# type_of_input(1.5)
