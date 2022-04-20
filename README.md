@@ -1,3 +1,6 @@
-slovar1 из курса qa_python_01  
-str1 Баур леция 2  
-str2 задача https://www.codewars.com/
+Python_01 питон 01 поток  
+Stroki програмки со строками  
+codewars задания с сайта https://www.codewars.com/  
+dop_zaniatia к лекциям Баура  
+lesson2  опературы условия и циклы  
+lesson3 ф-ии
