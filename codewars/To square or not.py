@@ -12,7 +12,7 @@ def square_or_square_root(arr):
     return c
 print(square_or_square_root([2,4,9]))
 __________
-# тестировнаие программы
+# тестировнаие программы "Если число имеет целый квадратный корень, возьмите его, иначе возведите число в квадрат"
 # from solution import square_or_square_root
 #
 #
