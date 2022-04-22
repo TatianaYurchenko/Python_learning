@@ -17,7 +17,12 @@
 # print(kratnost_chisel(2,12))
 #_____________
 
-def find_multiples(i, l):
-    return list(range(i, l+1, i))
-
-print(find_multiples(2,10))
+# def find_multiples(i, l):
+#     return list(range(i, l+1, i))
+#
+# print(find_multiples(2,10))
+#
+# _______________
+def find_multiples(integer, limit):
+    return [i for i in range(1, limit+1) if i%integer == 0]
+print(find_multiples(4,12))
