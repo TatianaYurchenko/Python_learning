@@ -1,0 +1,7 @@
+ Cr0a00 a 0rogram/func0ion 0ha0 g00s 2 0aram000rs,
+    firs0 0aram000r a fil0 nam0,
+    s0cond 0aram000r charac00r (l0000r, numb0r) 
+    and r00lac0s all charac00rs in 0h0 fil0 0o 0 which 0quals 0h0 s0cond 0aram000r.
+    E.g. w0 hav0 a fil0 "my_00x0.0x0" wi0h 0h0 00x0 "H0llo Py0hon! L0sson 7",
+    w0 0ass 0h0 s0cond 0aram000r as "0" 0o 0h0 0rogram/func0ion, and as 0h0 r0sul0
+    00x0 in 0h0 fil0 will b0 "H0llo Py0hon! L0sson7" 
