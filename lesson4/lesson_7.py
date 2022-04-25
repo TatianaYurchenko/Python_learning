@@ -19,7 +19,7 @@
 # # ==========
 # # Вариант 2
 
-def change_character(file_name, letter):
+def replace_to_zero(file_name: str, letter: str) -> str:
     with open(file_name, 'r') as file:
         content = file.read()
 
@@ -28,4 +28,4 @@ def change_character(file_name, letter):
     with open(file_name, 'w') as file:
         file.write(transformed)
 
-change_character(text_2.txt, "e")
+replace_to_zero("text_3.txt","p")
