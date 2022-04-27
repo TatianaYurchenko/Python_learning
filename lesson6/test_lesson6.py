@@ -1,7 +1,14 @@
+"""
+Пример файла содержащего юнит тесты по класической схеме, состоящей из 3-х частей
+"""
 import unittest
-class TestMyCode(unittest.TestCase):
 
-    def setUp(self) -> None:   # метод который всегда выполняется в начале сценария
+class TestMyCode(unittest.TestCase):
+    """
+    метод который всегда выполняется в начале сценария
+    """
+
+    def setUp(self) -> None:
         print("Starting testing ...")
         print("Set data or something else")
 
@@ -19,11 +26,16 @@ class TestMyCode(unittest.TestCase):
         # or
         # self.assertEqual(x,y)
 
-    def tearDown(self) -> None: # метод который всегда выполняется в конце сценария
+        """
+        метод который всегда выполняется в конце сценария
+        """
+    def tearDown(self) -> None:
         print("Clean data or do something else after the test")
         print("Testing is done")
+    """
+    инструкция для тест ранера
+    """
 
-
-if __name__ == '__main__': # инструкция для тест ранера
+if __name__ == '__main__':
     unittest.main()
 
