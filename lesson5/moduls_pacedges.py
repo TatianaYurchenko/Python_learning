@@ -1,2 +1,2 @@
-import modul as q
-print(q.low_case("rrrTT"))
+import lesson4.modul
+print(modul.low_case("rrrTT"))
