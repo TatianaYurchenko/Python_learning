@@ -1,3 +1,4 @@
+from math import ceil, sqrt
 # list1 = [1,2,3,4,5,6]
 # list3 = [n*n for n in list1 if n % 2]
 # print(list3)
