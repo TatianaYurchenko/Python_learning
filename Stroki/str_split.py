@@ -3,12 +3,12 @@
 #     return a
 # print(string_to_array("I; fg;gjhg;"))
 
-# some_str = "вася бежал по полю и умер"
-# lst = []
-# for i in range(len(some_str)):
-#     if some_str[i] == "а":
-#         lst.append(i)
-# print(lst)
+some_str = "вася бежал по полю и умер"
+lst = []
+for i in range(len(some_str)):
+    if some_str[i] == "а":
+        lst.append(i)
+print(lst)
 
 # a = input('введите два числа через пробел ')
 # a = a.split()
