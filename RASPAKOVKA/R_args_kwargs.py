@@ -8,3 +8,8 @@
 #     b = sep.join(args)
 #     return b
 # print(concat('hello', 'python', 'and', 'stepik'))
+
+#  **kwargs работает только со словарями
+def keywords(**kwargs):
+    return kwargs
+print(keywords(name = 'Alice', last_name = 'Petrova'))
