@@ -4,6 +4,11 @@ from random import randint
 # from string import printable
 # print(printable)
 
+# # считать символы записанные в одну строку
+# a = input().split()
+# a = [int(i) for i in a]
+# print(a)
+
 # for i in range(5):
 #  a = randint(1,100)
 # print(a)
@@ -28,4 +33,13 @@ from random import randint
 # for i in s.lower():
 #     if i >= 'a' and i <= 'z':
 #         print(i)
+
+# # Пояснение для фу-ции, описывается в виде первой строки
+# def get_something():
+#     """описание работы
+#      ф-ции"""
+#     return 'simple something'
+# help(get_something)
+
+#  пояснение к любому объекту ctrl+q
 

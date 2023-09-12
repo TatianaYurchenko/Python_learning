@@ -78,23 +78,14 @@
 #         удачи\
 #         на\
 #         экзамене!')
-# def concat(*args, sep=' '):
-#     # sep = (f' {sep} ')
-#     # b = (args)
-#     b = sep.join(args)
-#     return b
-# print(concat('hello', 'python', 'and', 'stepik'))
+def concat(*args, sep=' '):
+    # sep = (f' {sep} ')
+    # b = (args)
+    b = sep.join(args)
+    return b
+print(concat('hello', 'python', 'and', 'stepik', sep='*'))
 
 # Напишите функцию is_palindrome(text), которая принимает в качестве аргумента строку text и возвращает значение True если указанный текст является палиндромом и
 # False в противном случае.
 
 # def is_palindrome(a):
-#     a = a.lower()
-# is_palindrome('fgfh fh_ ?fhg')
-
-# some_str = "вася бежал по полю и умер"
-# lst = []
-# for i in range(len(some_str)):
-#     if some_str[i] == "а":
-#         lst.append(i)
-# print(lst)

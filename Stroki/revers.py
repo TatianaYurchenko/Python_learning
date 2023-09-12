@@ -1,4 +1,10 @@
-def reverse_string_slicing(s):
-    return s[::-1]
+# def reverse_string_slicing(s):
+#     return s[::-1]
+#
+# print(reverse_string_slicing('With platform'))
+from curses.ascii import isalnum
 
-print(reverse_string_slicing('With platform'))
+
+def is_palindrome(text):
+    clean_text = ''.join(c.lower() for c in text if c.isalnum())
+    return clean_text == clean_text[::-1]
