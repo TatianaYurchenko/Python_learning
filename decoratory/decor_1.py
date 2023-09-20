@@ -1,4 +1,51 @@
 import time, datetime
+''' описание Определение декоратора 
+Это ф-ция которая принимает другую ф-цию и возвращает ф-цию. декорараторы нужны чтобы у ф-ции 
+добавилось новое поведение# для того чтобы расширить ф-л ф-ции необходимо в качестве переменной присваивания 
+выбрать имя ф-ции ф-л которой мы хотим расширить'''
+def decator(func):
+    def inner():
+        print('start')
+        func()
+        print('finish')
+    return inner
+def say():
+    print('hello')
+decator(say)
+# выбрать имя ф-ции ф-л которой мы хотим расширить
+say = decator(say)
+say()
+#  следующий шаг добавить к ф-ции say аргументы. Для этого надо добавить аргумент в
+#  ф-цию say и в ф-цию inner внутри декоратора
+
+# создадим два декоратора и применим их к ф-ции say
+def heder(func):
+    #  при описании декоратора все аргументы которые принимаются на вход лучше передавать в виде *args и **kwargs
+    def inner(*args, **kwargs):
+        print('<h1>')
+        func(*args, **kwargs)
+        print('/<h1>')
+    return inner
+
+def table(func):
+    #  при описании декоратора все аргументы которые принимаются на вход лучше передавать в виде *args и **kwargs
+    def inner(*args, **kwargs):
+        print('<table>')
+        func(*args, **kwargs)
+        print('/<table>')
+    return inner
+# результат
+# декораторы навешиваются на ф-цию путем указания дероратора перед ф-цией
+@table
+@heder
+def say(name, age):
+    print('hello', name, age)
+
+
+say('vasia', 30)
+
+
+
 
 # def decorator_function(func):
 #     def wrapper():
@@ -63,8 +110,8 @@ import time, datetime
 
 
 
-x = datetime.datetime.now()
-time.sleep(1)
-y = datetime.datetime.now()
-b = y-x
-print(b)
+# x = datetime.datetime.now()
+# time.sleep(1)
+# y = datetime.datetime.now()
+# b = y-x
+# print(b)
