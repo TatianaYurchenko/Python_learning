@@ -25,11 +25,17 @@ print(sum(filter(lambda x: isinstance(x, int), list_1)))
 # задача на фильтрацию слов в которых есть а
 filtered = list(filter(lambda x: isinstance(x, str), list_1))
 print(list(filter(lambda i: 'a' in i, filtered)))
-#  или в одну строчку
+#  # ф-ция FILTER Тут мы должны указать какое-то уловие которому соответствует текущий элемент
+#  и если элемент соответствуует этой послндовательности то он добавляется в этот отфильтрованный список
+#  предыдущий пример в одну строчку
 filtered = list(filter(lambda x: isinstance(x, str) and 'a' in x, list_1))
 print(filtered)
+
 from functools import reduce
-# ф-ция reduce применяет действие ко всем эл там списка
+# ф-ция REDUSE В итоге получаем одно значение в примере элементы списка последовательно складываются
 rezult = reduce(lambda x, y: x+y, [2, 3, 4, 5, 6])
 print(rezult)
+# ф-ция MAP выражение в lambda применяется для каждого элемента в списке
+result = list(map(lambda x: x**2, [1, 2, 3, 4, 5, 6, 7]))
+print(result)
 
