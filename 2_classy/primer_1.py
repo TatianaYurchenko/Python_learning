@@ -1,3 +1,6 @@
+# данные меняются с помощью ф-ий get и set
+
+
 class Person:
     def __init__(self, name, surname):
         self.name = name
@@ -5,6 +8,9 @@ class Person:
 
     def hello(self):
         return f'Hello {self.name} {self.surname} '
+
+    def set_name(self, new_name):
+        self.name = new_name
 
 
 
@@ -16,3 +22,7 @@ class Tester(Person):
         return 'Ilove'
 tester_1 = Tester('Max', 'Popov', 'eng')
 print(tester_1.hello())
+person_1 = Person('alex', 'baker')
+person_1.set_name('sasha')
+print(person_1.hello())
+
