@@ -1,3 +1,19 @@
+stock = {
+    'name': 'John',
+    'last_name': 'Smith',
+    'age': 32,
+    'position': 'qa'
+}
+
+def print_key_values(**kwargs):
+    for key in kwargs:
+        print(kwargs[key])
+
+def print_key_values_1(**kwargs):
+    for key in kwargs:
+        print(kwargs[key])
+
+print_key_values(name='John', last_name='Smith', age=35)
 # # exercise 1
 # a = 0
 # inventory = {
@@ -55,16 +71,28 @@ stock = {
     'orange': 32,
     'pear': 15
 }
-grocerles = ['Banana', 'apple', 'orange', 'pear']
-def computer_bill(food):
-    total = 0
-    a = 0
-    for i in food:
-        total = stock[i] * prices[i]
-        print(stock[i])
-        print(prices[i])
-        a = a + total
-        print(total)
-        return total
+print(sum(stock.values()))
+# или
+res = 0
+for x in stock:
+    res += stock[x]
 
-print(computer_bill(grocerles))
+print(stock['orange'])
+
+
+
+
+#
+# grocerles = ['Banana', 'apple', 'orange', 'pear']
+# def computer_bill(food):
+#     total = 0
+#     a = 0
+#     for i in food:
+#         total = stock[i] * prices[i]
+#         print(stock[i])
+#         print(prices[i])
+#         a = a + total
+#         print(total)
+#         return total
+#
+# print(computer_bill(grocerles))
