@@ -61,3 +61,17 @@
 #     print(a.__class__)
 #     return a
 # type_of_input(1.5)
+s = 0
+lst = ['ha', 'ananas', 2, None, 78, True, 36]
+for i in lst:
+    if isinstance(i, int):
+        s += i
+print(s)
+# с i никаких манипуляций не делаем, если оно соответствует нашим условиям, то мы его оставляем
+list3 = sum([i for i in lst if isinstance(i, int)])
+print(list3)
+
+list_1 = [i for i in lst if isinstance(i, str) and 'a' in i]
+print(*list_1, sep=',')
+
+# list6 = [n*n for n in list1 if n % 2]
