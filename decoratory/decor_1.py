@@ -108,10 +108,16 @@ say('vasia', 30)
 # print(all_time)
 # # 1.0023632319971512
 
-
-
 # x = datetime.datetime.now()
 # time.sleep(1)
 # y = datetime.datetime.now()
 # b = y-x
-# print(b)
+print(f'текущее время {time.perf_counter()}')
+
+
+# встроенные декораторы
+# использование перебора по всем параметрам
+# @pytest.mark.parametrize("x", [0, 1])
+# @pytest.mark.parametrize("y", [2, 3])
+# def test_foo(x, y):
+#     pass
